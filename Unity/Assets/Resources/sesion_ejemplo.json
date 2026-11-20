@@ -1,0 +1,63 @@
+{
+  "sesion_id": "ejemplo",
+  "turno_maximo": 8,
+  "pasos": [
+    {
+      "mensaje": { "id": "m1", "emisor": "emprendedor", "tipo": "pitch", "turno": 1,
+        "texto": "Buenas tardes. Somos Lonchera Verde. Cada semana las escuelas tiran miles de envases desechables. Nosotros rentamos loncheras retornables: las recogemos, las lavamos y las regresamos llenas cada mañana. Ya trabajamos con 3 escuelas y vendemos 40,000 pesos al mes. Pedimos 100,000 pesos por el 10 % de la empresa." },
+      "turno": 1
+    },
+    {
+      "mensaje": { "id": "m2", "emisor": "juez", "tipo": "pregunta", "turno": 1,
+        "texto": "Gracias. ¿Cuánto les cuesta al mes lavar, transportar y reponer las loncheras?" }
+    },
+    {
+      "mensaje": { "id": "m3", "emisor": "emprendedor", "tipo": "respuesta", "turno": 2,
+        "texto": "Gastamos 28,000 pesos al mes: 15,000 en lavado, 9,000 en transporte y 4,000 en reponer loncheras dañadas." },
+      "turno": 2
+    },
+    {
+      "mensaje": { "id": "m4", "emisor": "juez", "tipo": "pregunta", "turno": 2,
+        "texto": "¿Cuántas familias usan el servicio y cuántas renuevan cada mes?" }
+    },
+    {
+      "mensaje": { "id": "m5", "emisor": "emprendedor", "tipo": "respuesta", "turno": 3,
+        "texto": "Tenemos 420 familias en las 3 escuelas y el 85 % renueva cada mes." },
+      "turno": 3
+    },
+    {
+      "mensaje": { "id": "m6", "emisor": "juez", "tipo": "oferta", "turno": 3,
+        "texto": "Me gusta el impacto ambiental y la renovación es buena, pero el margen todavía es bajo. Te ofrezco 100,000 pesos por el 17 %." },
+      "decision": "contraoferta",
+      "oferta_actual": { "monto": 100000, "porcentaje": 17 },
+      "calificaciones": [
+        { "criterio": "innovacion", "valor": 6, "evidencia": "rentamos loncheras retornables" },
+        { "criterio": "sostenibilidad", "valor": 7, "evidencia": "las escuelas tiran miles de envases desechables" },
+        { "criterio": "mercado", "valor": 6, "evidencia": "420 familias y el 85 % renueva cada mes" },
+        { "criterio": "rentabilidad", "valor": 5, "evidencia": "vendemos 40,000 pesos y gastamos 28,000 al mes" }
+      ]
+    },
+    {
+      "mensaje": { "id": "m7", "emisor": "emprendedor", "tipo": "oferta", "turno": 4,
+        "texto": "El 17 % es más de lo que podemos ceder. Te propongo 100,000 pesos por el 12 %." },
+      "turno": 4,
+      "oferta_actual": { "monto": 100000, "porcentaje": 12 }
+    },
+    {
+      "mensaje": { "id": "m8", "emisor": "juez", "tipo": "oferta", "turno": 4,
+        "texto": "Con el 12 % la empresa valdría 833,333 pesos, más de lo que veo hoy. Mi última oferta es 100,000 pesos por el 14 %." },
+      "oferta_actual": { "monto": 100000, "porcentaje": 14 }
+    },
+    {
+      "mensaje": { "id": "m9", "emisor": "emprendedor", "tipo": "aceptar", "turno": 5,
+        "texto": "Aceptamos: 100,000 pesos por el 14 %." },
+      "turno": 5,
+      "decision": "invertir"
+    },
+    {
+      "mensaje": { "id": "m10", "emisor": "juez", "tipo": "retroalimentacion", "turno": 5,
+        "texto": "Trato cerrado. Innovación: el modelo de renta es claro; busquen algo que sea difícil de copiar. Sostenibilidad: buen impacto; midan cuántos envases evitan. Mercado: 85 % de renovación es una buena señal; prueben en más escuelas. Rentabilidad: el margen es de 30 %; bajen el costo de lavado." },
+      "estado": "terminada"
+    }
+  ]
+}
