@@ -1,0 +1,6 @@
+# Never commit credentials: the Azure/OpenAI keys live in backend/.env
+.env
+.env.*
+venv/
+__pycache__/
+*.pyc
